@@ -18,34 +18,41 @@ jobs:
 
       - name: Verify Environment & Tools
         run: |
-          echo "=== System Info ==="
           sw_vers
           xcodebuild -version
+          xcodebuild -list -project iOSStudio/iOSStudio.xcodeproj
 
       - name: Build Application for Device (Unsigned)
         run: |
           set -o pipefail
-          xcodebuild clean build \
+          xcodebuild build \
             -project iOSStudio/iOSStudio.xcodeproj \
             -scheme iOSStudio \
             -configuration Release \
-            -sdk iphoneos \
-            -derivedDataPath build/DerivedData \
+            -destination "generic/platform=iOS" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             AD_HOC_CODE_SIGNING_ALLOWED=YES 2>&1 | tee xcodebuild.log
 
-      - name: Print Failure Log If Any
+      - name: Commit Failure Log for Inspection
         if: failure()
         run: |
-          echo "=== XCODEBUILD LOG TAIL ==="
-          tail -n 120 xcodebuild.log || true
+          mkdir -p ci_logs
+          tail -n 150 xcodebuild.log > ci_logs/last_error.log
+          git config user.name "CI Bot"
+          git config user.email "bot@ci.local"
+          git add ci_logs/last_error.log
+          git commit -m "chore: save xcodebuild failure log" || true
+          git push origin main || true
 
       - name: Package Payload and Create TrollStore-Compatible IPA
         run: |
           mkdir -p build/ipa_build/Payload
-          APP_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "iOSStudio.app" -type d | head -n 1)
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "iOSStudio.app" -type d | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            APP_PATH=$(find . -name "iOSStudio.app" -type d | head -n 1)
+          fi
           if [ -z "$APP_PATH" ]; then
             echo "Error: iOSStudio.app was not found in build products!"
             exit 1
@@ -61,16 +68,12 @@ jobs:
           zip -r -9 ../../iOSStudio.ipa Payload
           cd ../..
 
-      - name: Verify IPA Structure
+      - name: Commit IPA
         run: |
-          echo "=== Verifying IPA structure ==="
-          ls -lh iOSStudio.ipa
-          unzip -l iOSStudio.ipa | head -n 30
-
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: iOSStudio-TrollStore-IPA
-          path: iOSStudio.ipa
-          if-no-files-found: error
-          retention-days: 30
+          git config user.name "CI Bot"
+          git config user.email "bot@ci.local"
+          mkdir -p release_bin
+          cp iOSStudio.ipa release_bin/
+          git add release_bin/iOSStudio.ipa
+          git commit -m "build: attach iOSStudio.ipa binary" || true
+          git push origin main || true
