@@ -189,12 +189,10 @@
 				76444D7591C0121B498AF864 /* Sources */,
 				58A6AD7DA7544B8406AD7709 /* Frameworks */,
 				24F985E6D2A373B47700D575 /* Resources */,
-				6F4C4B608A6B58AAEE725BC2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8F675580163AA08FD3ED963B /* PBXTargetDependency */,
 			);
 			name = iOSStudio;
 			productName = iOSStudio;
