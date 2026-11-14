@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Compression
 
 public struct TendiesParseResult {
     public let packageName: String
@@ -256,34 +257,28 @@ public final class SimpleZipExtractor {
     }
     
     private static func decompressDeflate(data: Data) -> Data? {
-        // Native decompression via compression_encode_buffer / Apple Compression framework
-        var decompressed = Data()
-        data.withUnsafeBytes { rawBuffer in
-            let bufferSize = 65536
-            let destinationBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: bufferSize)
-            defer { destinationBuffer.deallocate() }
-            
-            var stream = z_stream()
-            guard inflateInit2_(&stream, -15, ZLIB_VERSION, Int32(MemoryLayout<z_stream>.size)) == Z_OK else {
-                return
-            }
-            defer { inflateEnd(&stream) }
-            
-            stream.next_in = UnsafeMutablePointer<Bytef>(mutating: rawBuffer.bindMemory(to: UInt8.self).baseAddress)
-            stream.avail_in = uInt(data.count)
-            
-            var status: Int32 = Z_OK
-            while status == Z_OK {
-                stream.next_out = destinationBuffer
-                stream.avail_out = uInt(bufferSize)
-                status = inflate(&stream, Z_SYNC_FLUSH)
-                let written = bufferSize - Int(stream.avail_out)
-                if written > 0 {
-                    decompressed.append(destinationBuffer, count: written)
-                }
-            }
+        // Use Apple's native Compression framework - no raw C zlib API needed.
+        // COMPRESSION_ZLIB processes raw DEFLATE (zip method 8) directly.
+        let srcCount = data.count
+        guard srcCount > 0 else { return nil }
+
+        // Allocate a generous destination buffer (raw deflate can expand 10x+)
+        let destCapacity = max(srcCount * 12, 65536)
+        let destBuffer = UnsafeMutablePointer<UInt8>.allocate(capacity: destCapacity)
+        defer { destBuffer.deallocate() }
+
+        let written = data.withUnsafeBytes { srcBytes -> Int in
+            guard let srcPtr = srcBytes.bindMemory(to: UInt8.self).baseAddress else { return 0 }
+            return compression_decode_buffer(
+                destBuffer, destCapacity,
+                srcPtr, srcCount,
+                nil,
+                COMPRESSION_ZLIB
+            )
         }
-        return decompressed.isEmpty ? nil : decompressed
+
+        guard written > 0 else { return nil }
+        return Data(bytes: destBuffer, count: written)
     }
 }
 
