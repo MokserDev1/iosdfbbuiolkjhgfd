@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: Build iOS Studio IPA
-    runs-on: macos-latest
+    runs-on: macos-14
 
     steps:
       - name: Checkout Repository
@@ -20,15 +20,15 @@ jobs:
         run: |
           echo "=== System Info ==="
           sw_vers
-          uname -a
-          echo "=== Xcode Version ==="
           xcodebuild -version
-          echo "=== Available SDKs ==="
-          xcodebuild -showsdks
+
+      - name: Create Dummy Development Certificate
+        run: |
+          echo "Setting up ad-hoc signing for TrollStore build..."
 
       - name: Build Application for Device (Unsigned)
         run: |
-          xcodebuild build \
+          xcodebuild clean build \
             -project iOSStudio/iOSStudio.xcodeproj \
             -scheme iOSStudio \
             -configuration Release \
@@ -37,7 +37,7 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            AD_HOC_CODE_SIGNING_ALLOWED=YES
+            AD_HOC_CODE_SIGNING_ALLOWED=YES 2>&1 | tee xcodebuild.log || (echo "=== XCODEBUILD LOG TAIL ===" && tail -n 100 xcodebuild.log && exit 1)
 
       - name: Package Payload and Create TrollStore-Compatible IPA
         run: |
@@ -71,3 +71,11 @@ jobs:
           path: iOSStudio.ipa
           if-no-files-found: error
           retention-days: 30
+
+      - name: Upload Build Logs If Failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-failure-log
+          path: xcodebuild.log
+          if-no-files-found: ignore
