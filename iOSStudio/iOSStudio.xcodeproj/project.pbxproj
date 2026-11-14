@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+/* Begin PBXBuildFile section */
+		2C020931FE6FFEAC59C090A3 /* iOSStudioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB22F221AE7198EF362938A /* iOSStudioApp.swift */; };
+		A7394E2CCB5A7593F2D3D717 /* NativeCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E83EE82AECA346D56884BDB /* NativeCardStyle.swift */; };
+		F89BC295CBEEDF911FE82EA2 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF45B6459093D7BA289C55 /* ThemeManager.swift */; };
+		842F5B062CFA237456DC2F39 /* AppModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1988CEC324CE58E207E063 /* AppModels.swift */; };
+		9525F7D5681691FAB34D62A8 /* AppStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17FA1A262DC0291871F9A2E /* AppStorageManager.swift */; };
+		C91CA0AD6D12C4D1203EB89E /* DocumentPickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3350F701212C3780563A0E64 /* DocumentPickers.swift */; };
+		5C50482522AD0BF92DDC4D2A /* HomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED6AD6907B0EFB98B4EBD5 /* HomeDashboardView.swift */; };
+		0D2C07DCEC3F18DF36192A49 /* WallpaperStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A836E8F27016D7FE5F406F /* WallpaperStudioView.swift */; };
+		1BE171B909F99BA27622ADB8 /* WallpaperDetailEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8446ADC1F2FA02FF973B4DB /* WallpaperDetailEditorView.swift */; };
+		FCE72F9AD8EF055706D1DF7C /* TendiesManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0981863897FB7F4DE7B08C25 /* TendiesManagerView.swift */; };
+		0B9C064CEB229E0850C04FFE /* IconStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F175E08A6455431DAFCF128D /* IconStudioView.swift */; };
+		891E6060C0554D0C42B5B661 /* WidgetStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC68FAC4AB87B54A0399D2B /* WidgetStudioView.swift */; };
+		AF475002F3B82E48A40060E1 /* ThemeStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F1370F8135F1C2306F0C5 /* ThemeStudioView.swift */; };
+		FB4DF8D0A62137E735FF2588 /* ShortcutsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5491AC2AA63D82AC2020D672 /* ShortcutsSettingsView.swift */; };
+		E7B94F9CBF0B6A570CE8ED82 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171C11AAE232A101E4468805 /* SettingsRootView.swift */; };
+		7818DC749DBED997AB8CF52E /* SystemInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A52C30F061AD8FDAA6E9FA6 /* SystemInspector.swift */; };
+		0C7C31D51D3656F7F43774E4 /* TendiesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C2C3E611A0C784BDE83D25 /* TendiesParser.swift */; };
+		A15258CA20AEB07B7819930E /* LivePhotoCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8BB612CFA9F544D94084B /* LivePhotoCreator.swift */; };
+		761C44C4D6574A1EDEB8F47A /* IconExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A698EEDC493C72074C054DA /* IconExporter.swift */; };
+		A9077BF1F6ABE3E55EA3D02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E0A9890B80AD2C194181B0 /* Assets.xcassets */; };
+		9CF381E9955E32859C8FBFE6 /* iOSStudioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB46D1CE74AE48CC9F9F191 /* iOSStudioWidget.swift */; };
+		27796DB61F66415E5A653B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D99B5B7E717ABAF10D2E4B /* Assets.xcassets */; };
+		72CDC25112662B04B33051BD /* iOSStudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95801C55273A0A83E5953279 /* iOSStudioTests.swift */; };
+		C1BB3F13EB98BB967DDBAB22 /* iOSStudioWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F22E9F166F456609DECFAD08 /* iOSStudioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+/* Begin PBXContainerItemProxy section */
+		27DEE3DE28BB552C8A46911D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = DBB52CECAA63396FA5ACBA59;
+			remoteInfo = iOSStudioWidgetExtension;
+		};
+		54B2C0C2D036711EC50215B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = E92819776D1D900150F17949;
+			remoteInfo = iOSStudio;
+		};
+/* End PBXContainerItemProxy section */
+/* Begin PBXCopyFilesBuildPhase section */
+		6F4C4B608A6B58AAEE725BC2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C1BB3F13EB98BB967DDBAB22 /* iOSStudioWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+/* Begin PBXFileReference section */
+		FAB22F221AE7198EF362938A /* iOSStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSStudioApp.swift"; sourceTree = "<group>"; };
+		2E83EE82AECA346D56884BDB /* NativeCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NativeCardStyle.swift"; sourceTree = "<group>"; };
+		C9AF45B6459093D7BA289C55 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeManager.swift"; sourceTree = "<group>"; };
+		CF1988CEC324CE58E207E063 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModels.swift"; sourceTree = "<group>"; };
+		E17FA1A262DC0291871F9A2E /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorageManager.swift"; sourceTree = "<group>"; };
+		3350F701212C3780563A0E64 /* DocumentPickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentPickers.swift"; sourceTree = "<group>"; };
+		A9ED6AD6907B0EFB98B4EBD5 /* HomeDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDashboardView.swift"; sourceTree = "<group>"; };
+		46A836E8F27016D7FE5F406F /* WallpaperStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WallpaperStudioView.swift"; sourceTree = "<group>"; };
+		B8446ADC1F2FA02FF973B4DB /* WallpaperDetailEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WallpaperDetailEditorView.swift"; sourceTree = "<group>"; };
+		0981863897FB7F4DE7B08C25 /* TendiesManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TendiesManagerView.swift"; sourceTree = "<group>"; };
+		F175E08A6455431DAFCF128D /* IconStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconStudioView.swift"; sourceTree = "<group>"; };
+		3CC68FAC4AB87B54A0399D2B /* WidgetStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetStudioView.swift"; sourceTree = "<group>"; };
+		137F1370F8135F1C2306F0C5 /* ThemeStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeStudioView.swift"; sourceTree = "<group>"; };
+		5491AC2AA63D82AC2020D672 /* ShortcutsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortcutsSettingsView.swift"; sourceTree = "<group>"; };
+		171C11AAE232A101E4468805 /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsRootView.swift"; sourceTree = "<group>"; };
+		5A52C30F061AD8FDAA6E9FA6 /* SystemInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SystemInspector.swift"; sourceTree = "<group>"; };
+		38C2C3E611A0C784BDE83D25 /* TendiesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TendiesParser.swift"; sourceTree = "<group>"; };
+		01C8BB612CFA9F544D94084B /* LivePhotoCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LivePhotoCreator.swift"; sourceTree = "<group>"; };
+		0A698EEDC493C72074C054DA /* IconExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconExporter.swift"; sourceTree = "<group>"; };
+		F9E0A9890B80AD2C194181B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		551DCC5CC32937A1B7A7EEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BEFD367C4AB92E0F59B0B1F /* iOSStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB46D1CE74AE48CC9F9F191 /* iOSStudioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSStudioWidget.swift"; sourceTree = "<group>"; };
+		73D99B5B7E717ABAF10D2E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F671B797781700A450B6D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F22E9F166F456609DECFAD08 /* iOSStudioWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iOSStudioWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		95801C55273A0A83E5953279 /* iOSStudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSStudioTests.swift"; sourceTree = "<group>"; };
+		02AC43A08A4599D8442B24FA /* iOSStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+/* Begin PBXFrameworksBuildPhase section */
+		58A6AD7DA7544B8406AD7709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FFAD1F8FB66DB299B6CB9AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E350EE90246378D4D995D966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+/* Begin PBXGroup section */
+		450B220DE8EEB27904FC3DC4 = {
+			isa = PBXGroup;
+			children = (
+				AB8D408CB1881C666AAC0831 /* iOSStudio */,
+				DE59ADA3DBA6A74DBC12560B /* iOSStudioWidget */,
+				3F5554CD9A4355364A60B26C /* iOSStudioTests */,
+				30772F61AC9BDC8631745269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30772F61AC9BDC8631745269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BEFD367C4AB92E0F59B0B1F /* iOSStudio.app */,
+				F22E9F166F456609DECFAD08 /* iOSStudioWidgetExtension.appex */,
+				02AC43A08A4599D8442B24FA /* iOSStudioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8D408CB1881C666AAC0831 /* iOSStudio */ = {
+			isa = PBXGroup;
+			children = (
+				FAB22F221AE7198EF362938A /* iOSStudioApp.swift */,
+				2E83EE82AECA346D56884BDB /* NativeCardStyle.swift */,
+				C9AF45B6459093D7BA289C55 /* ThemeManager.swift */,
+				CF1988CEC324CE58E207E063 /* AppModels.swift */,
+				E17FA1A262DC0291871F9A2E /* AppStorageManager.swift */,
+				3350F701212C3780563A0E64 /* DocumentPickers.swift */,
+				A9ED6AD6907B0EFB98B4EBD5 /* HomeDashboardView.swift */,
+				46A836E8F27016D7FE5F406F /* WallpaperStudioView.swift */,
+				B8446ADC1F2FA02FF973B4DB /* WallpaperDetailEditorView.swift */,
+				0981863897FB7F4DE7B08C25 /* TendiesManagerView.swift */,
+				F175E08A6455431DAFCF128D /* IconStudioView.swift */,
+				3CC68FAC4AB87B54A0399D2B /* WidgetStudioView.swift */,
+				137F1370F8135F1C2306F0C5 /* ThemeStudioView.swift */,
+				5491AC2AA63D82AC2020D672 /* ShortcutsSettingsView.swift */,
+				171C11AAE232A101E4468805 /* SettingsRootView.swift */,
+				5A52C30F061AD8FDAA6E9FA6 /* SystemInspector.swift */,
+				38C2C3E611A0C784BDE83D25 /* TendiesParser.swift */,
+				01C8BB612CFA9F544D94084B /* LivePhotoCreator.swift */,
+				0A698EEDC493C72074C054DA /* IconExporter.swift */,
+				F9E0A9890B80AD2C194181B0 /* Assets.xcassets */,
+				551DCC5CC32937A1B7A7EEE5 /* Info.plist */,
+			);
+			path = iOSStudio;
+			sourceTree = "<group>";
+		};
+		DE59ADA3DBA6A74DBC12560B /* iOSStudioWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8FB46D1CE74AE48CC9F9F191 /* iOSStudioWidget.swift */,
+				73D99B5B7E717ABAF10D2E4B /* Assets.xcassets */,
+				3F671B797781700A450B6D28 /* Info.plist */,
+			);
+			path = iOSStudioWidget;
+			sourceTree = "<group>";
+		};
+		3F5554CD9A4355364A60B26C /* iOSStudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				95801C55273A0A83E5953279 /* iOSStudioTests.swift */,
+			);
+			path = iOSStudioTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+/* Begin PBXNativeTarget section */
+		E92819776D1D900150F17949 /* iOSStudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685ED1EC3CE5DCB1A3E27FB1 /* Build configuration list for PBXNativeTarget "iOSStudio" */;
+			buildPhases = (
+				76444D7591C0121B498AF864 /* Sources */,
+				58A6AD7DA7544B8406AD7709 /* Frameworks */,
+				24F985E6D2A373B47700D575 /* Resources */,
+				6F4C4B608A6B58AAEE725BC2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F675580163AA08FD3ED963B /* PBXTargetDependency */,
+			);
+			name = iOSStudio;
+			productName = iOSStudio;
+			productReference = 8BEFD367C4AB92E0F59B0B1F /* iOSStudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBB52CECAA63396FA5ACBA59 /* iOSStudioWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1821B399A348F929DB23AC01 /* Build configuration list for PBXNativeTarget "iOSStudioWidgetExtension" */;
+			buildPhases = (
+				2C6C7472390CF94E77E35C83 /* Sources */,
+				6FFAD1F8FB66DB299B6CB9AB /* Frameworks */,
+				C9984BA5EF3FC46C7923215A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSStudioWidgetExtension;
+			productName = iOSStudioWidgetExtension;
+			productReference = F22E9F166F456609DECFAD08 /* iOSStudioWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		45972596DBEF12805283439E /* iOSStudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EFE11ED5581365097F98F90 /* Build configuration list for PBXNativeTarget "iOSStudioTests" */;
+			buildPhases = (
+				E36BB787EC76E27E13DAFFBA /* Sources */,
+				E350EE90246378D4D995D966 /* Frameworks */,
+				CA201A0658B94E34C726A68B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749D8976D703DE7159A49A17 /* PBXTargetDependency */,
+			);
+			name = iOSStudioTests;
+			productName = iOSStudioTests;
+			productReference = 02AC43A08A4599D8442B24FA /* iOSStudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E92819776D1D900150F17949 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DBB52CECAA63396FA5ACBA59 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					45972596DBEF12805283439E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = E92819776D1D900150F17949;
+					};
+				};
+			};
+			buildConfigurationList = 022E0F2E8ECAC35F5510DD6F /* Build configuration list for PBXProject "iOSStudio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 450B220DE8EEB27904FC3DC4;
+			productRefGroup = 30772F61AC9BDC8631745269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92819776D1D900150F17949 /* iOSStudio */,
+				DBB52CECAA63396FA5ACBA59 /* iOSStudioWidgetExtension */,
+				45972596DBEF12805283439E /* iOSStudioTests */,
+			);
+		};
+/* End PBXProject section */
+/* Begin PBXResourcesBuildPhase section */
+		24F985E6D2A373B47700D575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9077BF1F6ABE3E55EA3D02F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9984BA5EF3FC46C7923215A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27796DB61F66415E5A653B1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA201A0658B94E34C726A68B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+/* Begin PBXSourcesBuildPhase section */
+		76444D7591C0121B498AF864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C020931FE6FFEAC59C090A3 /* iOSStudioApp.swift in Sources */,
+				A7394E2CCB5A7593F2D3D717 /* NativeCardStyle.swift in Sources */,
+				F89BC295CBEEDF911FE82EA2 /* ThemeManager.swift in Sources */,
+				842F5B062CFA237456DC2F39 /* AppModels.swift in Sources */,
+				9525F7D5681691FAB34D62A8 /* AppStorageManager.swift in Sources */,
+				C91CA0AD6D12C4D1203EB89E /* DocumentPickers.swift in Sources */,
+				5C50482522AD0BF92DDC4D2A /* HomeDashboardView.swift in Sources */,
+				0D2C07DCEC3F18DF36192A49 /* WallpaperStudioView.swift in Sources */,
+				1BE171B909F99BA27622ADB8 /* WallpaperDetailEditorView.swift in Sources */,
+				FCE72F9AD8EF055706D1DF7C /* TendiesManagerView.swift in Sources */,
+				0B9C064CEB229E0850C04FFE /* IconStudioView.swift in Sources */,
+				891E6060C0554D0C42B5B661 /* WidgetStudioView.swift in Sources */,
+				AF475002F3B82E48A40060E1 /* ThemeStudioView.swift in Sources */,
+				FB4DF8D0A62137E735FF2588 /* ShortcutsSettingsView.swift in Sources */,
+				E7B94F9CBF0B6A570CE8ED82 /* SettingsRootView.swift in Sources */,
+				7818DC749DBED997AB8CF52E /* SystemInspector.swift in Sources */,
+				0C7C31D51D3656F7F43774E4 /* TendiesParser.swift in Sources */,
+				A15258CA20AEB07B7819930E /* LivePhotoCreator.swift in Sources */,
+				761C44C4D6574A1EDEB8F47A /* IconExporter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6C7472390CF94E77E35C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF381E9955E32859C8FBFE6 /* iOSStudioWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E36BB787EC76E27E13DAFFBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72CDC25112662B04B33051BD /* iOSStudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+/* Begin PBXTargetDependency section */
+		8F675580163AA08FD3ED963B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBB52CECAA63396FA5ACBA59 /* iOSStudioWidgetExtension */;
+			targetProxy = 27DEE3DE28BB552C8A46911D /* PBXContainerItemProxy */;
+		};
+		749D8976D703DE7159A49A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92819776D1D900150F17949 /* iOSStudio */;
+			targetProxy = 54B2C0C2D036711EC50215B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+/* Begin XCBuildConfiguration section */
+		EC86DC4F4B4C60C3EC031655 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)", );
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BF40F069D95C38DE60AA602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13EFB9B3A845C5FB19B62707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOSStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD5DB308F45A1BA70168CF05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOSStudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B26001683ADF87ED50C4D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOSStudioWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		313D0CC68C6414580BC9FF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iOSStudioWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6131DD04465602991B66AA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSStudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSStudio";
+			};
+			name = Debug;
+		};
+		39C9A3FA9B230749BE59216B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosstudio.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSStudio.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOSStudio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+/* Begin XCConfigurationList section */
+		022E0F2E8ECAC35F5510DD6F /* Build configuration list for PBXProject "iOSStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC86DC4F4B4C60C3EC031655 /* Debug */,
+				7BF40F069D95C38DE60AA602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685ED1EC3CE5DCB1A3E27FB1 /* Build configuration list for PBXNativeTarget "iOSStudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13EFB9B3A845C5FB19B62707 /* Debug */,
+				BD5DB308F45A1BA70168CF05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1821B399A348F929DB23AC01 /* Build configuration list for PBXNativeTarget "iOSStudioWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26001683ADF87ED50C4D150 /* Debug */,
+				313D0CC68C6414580BC9FF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFE11ED5581365097F98F90 /* Build configuration list for PBXNativeTarget "iOSStudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6131DD04465602991B66AA05 /* Debug */,
+				39C9A3FA9B230749BE59216B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
