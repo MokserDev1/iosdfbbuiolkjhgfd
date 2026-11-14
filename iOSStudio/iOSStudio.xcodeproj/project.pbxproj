@@ -61,25 +61,25 @@
 		};
 /* End PBXCopyFilesBuildPhase section */
 /* Begin PBXFileReference section */
-		FAB22F221AE7198EF362938A /* iOSStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "iOSStudioApp.swift"; sourceTree = "<group>"; };
-		2E83EE82AECA346D56884BDB /* NativeCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NativeCardStyle.swift"; sourceTree = "<group>"; };
-		C9AF45B6459093D7BA289C55 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeManager.swift"; sourceTree = "<group>"; };
-		CF1988CEC324CE58E207E063 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppModels.swift"; sourceTree = "<group>"; };
-		E17FA1A262DC0291871F9A2E /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorageManager.swift"; sourceTree = "<group>"; };
-		3350F701212C3780563A0E64 /* DocumentPickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentPickers.swift"; sourceTree = "<group>"; };
-		A9ED6AD6907B0EFB98B4EBD5 /* HomeDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeDashboardView.swift"; sourceTree = "<group>"; };
-		46A836E8F27016D7FE5F406F /* WallpaperStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WallpaperStudioView.swift"; sourceTree = "<group>"; };
-		B8446ADC1F2FA02FF973B4DB /* WallpaperDetailEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WallpaperDetailEditorView.swift"; sourceTree = "<group>"; };
-		0981863897FB7F4DE7B08C25 /* TendiesManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TendiesManagerView.swift"; sourceTree = "<group>"; };
-		F175E08A6455431DAFCF128D /* IconStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconStudioView.swift"; sourceTree = "<group>"; };
-		3CC68FAC4AB87B54A0399D2B /* WidgetStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WidgetStudioView.swift"; sourceTree = "<group>"; };
-		137F1370F8135F1C2306F0C5 /* ThemeStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ThemeStudioView.swift"; sourceTree = "<group>"; };
-		5491AC2AA63D82AC2020D672 /* ShortcutsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShortcutsSettingsView.swift"; sourceTree = "<group>"; };
-		171C11AAE232A101E4468805 /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsRootView.swift"; sourceTree = "<group>"; };
-		5A52C30F061AD8FDAA6E9FA6 /* SystemInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SystemInspector.swift"; sourceTree = "<group>"; };
-		38C2C3E611A0C784BDE83D25 /* TendiesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TendiesParser.swift"; sourceTree = "<group>"; };
-		01C8BB612CFA9F544D94084B /* LivePhotoCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LivePhotoCreator.swift"; sourceTree = "<group>"; };
-		0A698EEDC493C72074C054DA /* IconExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconExporter.swift"; sourceTree = "<group>"; };
+		FAB22F221AE7198EF362938A /* iOSStudioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/iOSStudioApp.swift"; sourceTree = "<group>"; };
+		2E83EE82AECA346D56884BDB /* NativeCardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Design/NativeCardStyle.swift"; sourceTree = "<group>"; };
+		C9AF45B6459093D7BA289C55 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Design/ThemeManager.swift"; sourceTree = "<group>"; };
+		CF1988CEC324CE58E207E063 /* AppModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/AppModels.swift"; sourceTree = "<group>"; };
+		E17FA1A262DC0291871F9A2E /* AppStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Storage/AppStorageManager.swift"; sourceTree = "<group>"; };
+		3350F701212C3780563A0E64 /* DocumentPickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Extensions/DocumentPickers.swift"; sourceTree = "<group>"; };
+		A9ED6AD6907B0EFB98B4EBD5 /* HomeDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Home/HomeDashboardView.swift"; sourceTree = "<group>"; };
+		46A836E8F27016D7FE5F406F /* WallpaperStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/WallpaperStudio/WallpaperStudioView.swift"; sourceTree = "<group>"; };
+		B8446ADC1F2FA02FF973B4DB /* WallpaperDetailEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/WallpaperStudio/WallpaperDetailEditorView.swift"; sourceTree = "<group>"; };
+		0981863897FB7F4DE7B08C25 /* TendiesManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/TendiesManager/TendiesManagerView.swift"; sourceTree = "<group>"; };
+		F175E08A6455431DAFCF128D /* IconStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/IconStudio/IconStudioView.swift"; sourceTree = "<group>"; };
+		3CC68FAC4AB87B54A0399D2B /* WidgetStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/WidgetStudio/WidgetStudioView.swift"; sourceTree = "<group>"; };
+		137F1370F8135F1C2306F0C5 /* ThemeStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/ThemeStudio/ThemeStudioView.swift"; sourceTree = "<group>"; };
+		5491AC2AA63D82AC2020D672 /* ShortcutsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/ShortcutsSettings/ShortcutsSettingsView.swift"; sourceTree = "<group>"; };
+		171C11AAE232A101E4468805 /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Settings/SettingsRootView.swift"; sourceTree = "<group>"; };
+		5A52C30F061AD8FDAA6E9FA6 /* SystemInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/SystemInspector/SystemInspector.swift"; sourceTree = "<group>"; };
+		38C2C3E611A0C784BDE83D25 /* TendiesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/TendiesParser/TendiesParser.swift"; sourceTree = "<group>"; };
+		01C8BB612CFA9F544D94084B /* LivePhotoCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/LivePhoto/LivePhotoCreator.swift"; sourceTree = "<group>"; };
+		0A698EEDC493C72074C054DA /* IconExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Services/IconExporter/IconExporter.swift"; sourceTree = "<group>"; };
 		F9E0A9890B80AD2C194181B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551DCC5CC32937A1B7A7EEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BEFD367C4AB92E0F59B0B1F /* iOSStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -408,9 +408,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOSStudio/Info.plist;
@@ -429,9 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOSStudio/Info.plist;
@@ -448,9 +450,10 @@
 		B26001683ADF87ED50C4D150 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOSStudioWidget/Info.plist;
@@ -468,9 +471,10 @@
 		313D0CC68C6414580BC9FF50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iOSStudioWidget/Info.plist;
@@ -489,9 +493,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
@@ -507,9 +512,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0.0;
